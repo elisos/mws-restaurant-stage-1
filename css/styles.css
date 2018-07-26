@@ -239,7 +239,7 @@ nav h1 a {
   z-index: 1000;
 }
 .inside #breadcrumb {
-    background-color: #467493;
+    background-color: #61a6d4;
 }
 .inside #breadcrumb a {
     color: #fff;
@@ -264,6 +264,7 @@ nav h1 a {
   bottom: 0;
   position: fixed;
   width: 50%;
+    height: 60px;
 }
 #restaurant-name {
   color: #61a6d4;
