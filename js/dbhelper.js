@@ -150,8 +150,20 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+      if (screen.width > 800){
+    return (`/img/${restaurant.photograph}.jpg`);
+      } else {
+         return (`/img/${restaurant.photograph}-med-min.jpg`);
+      }
   }
+    
+//  static srcsetForRestaurant(restaurant) {
+//        return (`/img/${restaurant.photograph} 800w, /img/${restaurant.photograph}-med-min 500w`);
+//  }
+//    
+//  static sizesForRestaurant(restaurant) {
+//        return (`/img/${restaurant.photograph} 800w, /img/${restaurant.photograph}-med-min 500w`);
+//  }
 
   /**
    * Map marker for a restaurant.
