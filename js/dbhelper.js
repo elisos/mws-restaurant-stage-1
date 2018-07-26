@@ -157,6 +157,10 @@ class DBHelper {
       }
   }
     
+ static altTextForRestaurant(restaurant) {
+     return(`Image of ${restaurant.name}`);
+ }
+    
 //  static srcsetForRestaurant(restaurant) {
 //        return (`/img/${restaurant.photograph} 800w, /img/${restaurant.photograph}-med-min 500w`);
 //  }
