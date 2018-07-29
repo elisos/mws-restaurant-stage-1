@@ -23,9 +23,10 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map" aria-label="Map of restaurant locations"></div>
+      <div id="skip" aria-label="Skip link"><a href="#afterMap">Skip to content after the map</a></div>
+      <div id="map" role= "application" aria-label="Map of restaurant locations"></div>
     </section>
-    <section>
+    <section id="afterMap">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Select neighborhood">

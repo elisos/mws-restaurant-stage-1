@@ -90,7 +90,7 @@ nav h1 {
   margin: 0 auto;
   padding: 20px 0;
   background-color: #252831;
-  background-image: linear-gradient(#343434,rgba(52, 52, 52, 0.75)), url('/img/nav-large.jpg');
+  background-image: linear-gradient(#343434,rgba(52, 52, 52, 0.75)), url('/img/nav-small.jpg');
   background-size: cover;
 }
 
@@ -141,6 +141,21 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
+#skip a { 
+    position:absolute; 
+    left:-10000px; 
+    top:auto; 
+    width:1px; 
+    height:1px; 
+    overflow:hidden;
+} 
+ 
+#skip a:focus { 
+    position:static; 
+    width:auto; 
+    height:auto; 
+} 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -157,6 +172,8 @@ nav h1 a {
   line-height: 1;
   margin: 0 20px;
   padding: 10px 0 5px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .filter-options select {
   background-color: white;
@@ -342,7 +359,7 @@ nav h1 a {
 
 /*---------mid-sized screens---------*/
 
-@media screen and (min-width: 601px) and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
     .inside #maincontent {
         display: flex;
         flex-direction: column;
@@ -444,10 +461,10 @@ nav h1 a {
     
     .inside #footer {
       width: 100%;
-        height: 50px;
-        font-size: 7pt;
-  padding:10px;
-        z-index: 1000;
+      height: 50px;
+      font-size: 7pt;
+      padding:10px;
+      z-index: 1000;
     }
     
     .inside #breadcrumb {
@@ -462,14 +479,13 @@ nav h1 a {
     }
     
     .inside #reviews-container h2 {
-        font-size: 15pt;
+      font-size: 15pt;
     }
     
     .inside #breadcrumb li+li:before {
-    color: white;
+        color: white;
     }
 
-    /* Add a color to all links inside the list */
     .inside #breadcrumb li a {
         color: white;
     }
