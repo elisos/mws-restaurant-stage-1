@@ -1,3 +1,7 @@
+self.addEventListener('fetch', event =>
+    console.log(event.request);
+);
+
 var staticCacheName = 'restaurant-reviews-cache-v1';
 
 self.addEventListener('install', event => {
