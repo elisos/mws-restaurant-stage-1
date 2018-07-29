@@ -252,6 +252,7 @@ nav h1 a {
 }
 .inside #restaurant-container {
     background-color: #fff;
+    margin-right: 0;
 }
 .inside header {
   position: fixed;
@@ -277,7 +278,7 @@ nav h1 a {
   width: 50%;
 }
 .inside #map {
-  background-color: #ccc;
+  background-color: #acacac;
   height: 100%;
   width: 100%;
 }
