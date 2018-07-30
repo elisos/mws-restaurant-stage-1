@@ -35,7 +35,8 @@ self.addEventListener('install', event => {
         './restaurant.html',
         './index.html'
       ]);
-    }).catch(error => {
+    })
+      .catch(error => {
         console.log("Caches open failed:" + error);
     })
   ); 
@@ -53,26 +54,3 @@ self.addEventListener('fetch', event => {
         })
     );
 })
-
-//self.addEventListener('fetch', event => {
-//   var requestUrl = new URL(event.request.url);
-//
-//  if (requestUrl.origin === location.origin) {
-//    if (requestUrl.pathname === '/') {
-//      event.respondWith(caches.match('/skeleton'));
-//      return;
-//    }
-//  }
-//        
-//  event.respondWith(
-//    caches.match(event.request).then(function(response) {
-//      return response || fetch(event.request);
-//    })
-//  );
-//});
-
-//self.addEventListener('message', function(event) {
-//  if (event.data.action === 'skipWaiting') {
-//    self.skipWaiting();
-//  }
-//});
