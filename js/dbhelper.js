@@ -5,10 +5,9 @@ class DBHelper {
 
   /**
    * Database URL.
-   * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
+    const port = 8000
     return `http://localhost:${port}/data/restaurants.json`;
   }
 
@@ -154,7 +153,7 @@ class DBHelper {
   }
     
   static srcsetForRestaurant(restaurant) {
-      return (`/img/${restaurant.photograph}-med-min.jpg 500W`);
+      return (`/img/${restaurant.photograph}-med-min.jpg 500w, /img/${restaurant.photograph}.jpg 800w`);
   }
     
  static altTextForRestaurant(restaurant) {

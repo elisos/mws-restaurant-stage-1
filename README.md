@@ -1,5 +1,4 @@
 # Restaurant Reviews Web Application
-==========================================
 
 ## Table of Contents
 
@@ -8,7 +7,7 @@
 * [Attributions](#attributions)
 * [Contributing](#contributing)
 
-# Overview
+## Overview
 This is a web-based application which allows you to look up restaurants in NYC by neighbourhood and by type of cuisine and find reviews about them. It was created as a requirement for Udacity's Front End Developer Nanodegree.
 
 ## Getting Started
@@ -30,6 +29,8 @@ Using the drop down menus for neighbourhood and cuisine type, narrow down the op
 The base code for the project was provided by Udacity. I was asked to make the app responsive to different screen sizes, accessible to those with disabilities, and progressive so that it is available off-line should an internet connection fail.
 
 The code for the skip-link came from [here](https://webaim.org/techniques/skipnav/).
+
+The version of source set I used came from [here](https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/).
 
 The code for the service worker came almost straight from the Udacity course material.
 

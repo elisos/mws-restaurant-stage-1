@@ -44,6 +44,7 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
     event.respondWith(
+//        console.log('the service worker is serving the asset');
         caches.match(event.request).then(response => {
             if(response) {
                 return response;
@@ -54,3 +55,18 @@ self.addEventListener('fetch', event => {
         })
     );
 })
+
+self.addEventListener('activate', function (event) {
+    event.waitUntil(
+        caches.keys().then(function (cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function (cacheName) {
+                    return cacheName.startsWith('restaurant-review-') &&
+                        cacheName != staticCacheName;
+                }).map(function (cacheName) {
+                    return caches.delete(cacheName);
+                })
+            );
+        })
+    );
+});
