@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
  */
 initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
+      //if there is internet access, get the map from mapBox. Otherwise, use the screenshot of the map instead. Idea suggested by a fellow Udacity student on slack.
     if (error) { // Got an error!
       console.error(error);
     } else {

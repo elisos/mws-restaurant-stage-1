@@ -72,7 +72,7 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  * Initialize leaflet map, called from HTML.
  */
 initMap = () => {
-    //if there is internet access, get the map from mapBox. Otherwise, use the screenshot of the map instead.
+    //if there is internet access, get the map from mapBox. Otherwise, use the screenshot of the map instead. Idea suggested by a fellow Udacity student on slack.
   if (navigator.onLine) {
       self.newMap = L.map('map', {
             center: [40.722216, -73.987501],
