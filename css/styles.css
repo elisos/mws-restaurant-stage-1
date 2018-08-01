@@ -261,6 +261,7 @@ nav h1 a {
 .inside #restaurant-container {
     background-color: #fff;
     margin-right: 0;
+    width: 100%;
 }
 .inside header {
   position: fixed;
