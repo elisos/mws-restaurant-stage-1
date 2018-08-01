@@ -32,9 +32,9 @@ initMap = () => {
           }).addTo(newMap);
       } else {
             const map = document.getElementById('map');
-            const offlineMap = document.createElement('div');
-            map.appendChild(offlineMap);
-            offlineMap.classList.add('offline');
+            const screenshotMap = document.createElement('div');
+            map.appendChild(screenshotMap);
+            screenshotMap.classList.add('screenshot');
       }
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);

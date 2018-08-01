@@ -142,7 +142,7 @@ nav h1 a {
   background-color: #ccc;
 }
 
-.offline {
+.screenshot {
   background-image: url('../img/map-screenshot.jpg');
   background-position: center;
   background-size: cover;
