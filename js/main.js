@@ -90,7 +90,7 @@ initMap = () => {
   } else {
         const map = document.getElementById('map');
 		const screenshotMap = document.createElement('div');
-		map.appendChild(screenshotMapMap);
+		map.appendChild(screenshotMap);
 		screenshotMap.classList.add('screenshot');
   }
 
@@ -174,7 +174,7 @@ createRestaurantHTML = (restaurant) => {
   image.srcset = DBHelper.srcsetForRestaurant(restaurant);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 

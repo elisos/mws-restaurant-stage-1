@@ -59,7 +59,7 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
     event.respondWith(
-//        console.log('the service worker is serving the asset');
+        console.log('the service worker is serving');
         caches.match(event.request).then(response => {
             if(response) {
                 return response;
